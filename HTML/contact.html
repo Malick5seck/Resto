@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+     <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="tittle-big">CONTACT</h1>
+        <nav  class="header-nav">
+            <a href="../index.html">Acceuil</a>
+            <a href="menu.html">menu</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="contact">
+      <div class="localisation">
+        <h2>LOCALISATION</h2>
+        <p>
+            EN FACE STADE LAT DIOR <br>
+            MBOUR1/THIES/SENEGAL <br>
+      </div>
+        </p>
+        <h2 class="h2">Nous envoyer un email</h2>
+        <form id="form">
+            <div>
+              <label for="name">Prenom </label>
+              <input type="text" id="firstname" placeholder="Entrer votre prenom">
+
+            </div>
+            <div>
+              <label for="name">Nom </label>
+              <input type="text" id="lastname"  placeholder="Entrer votre nom" >
+
+            </div>
+            <div>
+              
+              <label for="name">Telephone</label>
+              <input type="number" id="phone" placeholder="Entrer votre telephone" >
+    
+            </div>
+            <div>
+              <label for="email">Email </label>
+              <input type="email" id="email" placeholder="Veuillez entrer votre email">
+
+            </div>
+            <div>
+              <label for="email">Email </label>
+              <input type="email" id="email" placeholder="Confirmer votre email" >
+
+            </div>
+            <div>
+              <label for="message">Message </label>
+              <textarea id="message" ></textarea>
+
+            </div>
+
+             <div class="button">
+              <button type="submit">Envoyer</button>
+              <button type="reset">Reinitialiser</button>
+             </div>
+
+          </form>
+          <div id="messError"></div>
+    </section><br>
+    <footer>
+        <address class="pied">  MBOUR1 EN FACE STADE LAT DIOR  </address>
+    </footer>
+    <script>
+      let form = document.getElementById("form")
+
+let prenom = document.getElementById("firstname")
+let nom = document.getElementById("lastname")
+let email = document.getElementById("email")
+let phone = document.getElementById("phone")
+let message = document.getElementById("message")
+
+let messError = document.getElementById("messError")
+
+form.addEventListener("submit", 
+    function(e){
+        e.preventDefault()
+    
+    if(prenom.value !== "" && 
+        nom.value !== "" && 
+        email.value !== "" && 
+        phone.value !== "" &&
+        message.value !== ""){
+        
+        messError.innerHTML = "Votre formulaire a ete soumis avec succes"
+        messError.style.color ="blue";
+    
+        
+    }else{
+    
+        messError.innerHTML = "veuillez remplir tous les champs"
+        messError.style.color ="red" ;
+
+    }
+})
+    </script>
+</body>
+</html>

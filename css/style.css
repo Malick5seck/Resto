@@ -1,0 +1,148 @@
+*{
+box-sizing: border-box;
+}
+body{
+  background: url(../IMAGE/R.jpeg) rgba(0, 0, 0, 0.7);
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size:cover ;
+  background-attachment: fixed;
+  background-blend-mode: darken;
+  height: 100vh;
+  color: #fff;
+}
+
+
+header {
+color: whitesmoke;
+height: auto;
+z-index: 2;
+padding: 20px;
+}
+header img {
+width: 100%;
+height: auto;
+}
+ 
+.header-nav {
+overflow: hidden;
+text-align: center; 
+margin-top: 10px;
+z-index: 3;
+}
+.tittle-big { 
+text-align: center;
+margin: 0;
+text-transform: capitalize;
+font-style: italic;
+z-index: 4;
+}
+
+.main {
+/* background: beige */
+padding: 20px;
+position: relative;
+font-size: 16px;
+z-index: 1;
+}
+.h1 {
+text-align: center;
+font-weight: bolder;
+font-size: 35px;
+} 
+.article {
+
+display: flex;
+box-sizing: border-box;
+margin: 0 100px 0 40px  ;
+justify-content: space-between;
+}
+
+.localisation {
+margin-left: 20px;
+}
+.localisation h2 {
+font-weight: bolder;
+font-size: 30px;
+}
+.h2 {
+text-align: center;
+font-weight: bolder;
+font-size: 40px;
+}
+form {
+max-width: 600px;
+margin: 20px auto;
+padding: 20px ;
+background-color: rgba(152, 139, 139, 0.5);
+border: 1px solid #ccc;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+display: block;
+margin-bottom: 10px;
+font-weight: bold;
+color: black;
+
+}
+
+form input,
+form textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 5px;
+color: black;
+box-sizing: border-box;
+}
+
+form button {
+width: 500%;
+padding: 10px;
+background-color: black;
+color: white;
+border: none;
+border-radius: 5px;
+font-size: 20px;
+font-weight: bold;
+cursor: pointer;
+
+}
+
+.button {
+display: flex;
+justify-content: space-between;
+gap: 120px;
+
+}
+
+.header-nav a {
+display: inline-block;
+width: 25%;
+color: inherit ;
+text-decoration: none;
+background-color: rgb(101, 78, 78);
+}
+.header-nav a:hover{
+text-decoration: underline;
+background-color: rgba(247, 244, 244, 0.4);
+}
+.main p {
+  text-align:justify ;
+  margin-bottom: 1,5rem;
+}
+.image {
+float: left;
+margin-right: 15px;
+}
+.pied {
+margin-top: 50px;
+text-align: center;
+}
+#messError{
+font-size: 30px;
+text-align: center;
+}
